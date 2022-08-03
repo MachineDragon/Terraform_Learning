@@ -9,6 +9,35 @@ type:    brew install terraform
 
 
 
+AWS
+__________________________
+in okta search aws sre-dev and select dev-admin
+
+aws.amazon.com
+
+search for IAM     
+(identity and access management)
+
+This is where you setup users, groups, rolls and permissions
+
+>>> Users
+>>> Add user
+>>> user name ---> terraform
+>>> check programmatic access
+>>> permissions
+>>> attach existing policies
+>>> administrator access
+>>> next:tags
+>>> next
+>>> create user
+>>> SAVE THE CREDENTIALS AND DO NOT SHARE download .cs√
+>>> close
+
+Confic File
+----------------------------
+<img width="379" alt="image" src="https://user-images.githubusercontent.com/58194115/182642632-7981e0ee-54b2-456a-9dce-cfab0bc53931.png">
+
+
 
 
 
