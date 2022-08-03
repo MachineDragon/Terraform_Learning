@@ -21,16 +21,27 @@ search for IAM
 This is where you setup users, groups, rolls and permissions
 
 Users
+
 Add user
+
 user name ---> terraform
+
 check programmatic access
+
 permissions
+
 attach existing policies
+
 administrator access
+
 next:tags
+
 next
+
 create user
+
 SAVE THE CREDENTIALS AND DO NOT SHARE download .cs√
+
 close
 
 Confic File
