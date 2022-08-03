@@ -113,9 +113,10 @@ provider "aws" {
   region = "us-east-1"
 }
 
-now open your config file and paste the access key and secret key under region
 
-paste this into your main.tf it should look something like this
+now open your config file, copy the access key and secret key and paste them under region
+
+it should look something like this
 
 
 <img width="759" alt="image" src="https://user-images.githubusercontent.com/58194115/182707736-b78fef45-9c9b-4537-aaa7-c1d284c72bed.png">
