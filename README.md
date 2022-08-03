@@ -35,7 +35,7 @@ This is where you setup users, groups, rolls and permissions
 
 Confic File
 ----------------------------
-<img width="379" alt="image" src="https://user-images.githubusercontent.com/58194115/182642632-7981e0ee-54b2-456a-9dce-cfab0bc53931.png">
+<img width="359" alt="image" src="https://user-images.githubusercontent.com/58194115/182642822-e35b573f-2d93-495a-8fb5-03a6289dcc61.png">
 
 
 
