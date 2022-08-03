@@ -1,7 +1,7 @@
 # Terraform_Learning
 
 Installation
-_______________________
+----------------------
 
 Open Terminal
 
@@ -10,7 +10,7 @@ type:    brew install terraform
 
 
 AWS
-__________________________
+------------------------
 in okta search aws sre-dev and select dev-admin
 
 aws.amazon.com
@@ -42,7 +42,7 @@ Confic File
 
 
 What is Terraform?
-___________________________
+----------------------------
 
 Infrastructure Management Tool made by HashiCorp that lets you provision manage and maintain cloud resources like servers, networking, storage etc all in one centralized set code
 
@@ -56,7 +56,7 @@ Terraform cant change whats running on that server once its deployed, for that y
 
 
 Containers
-___________________________
+---------------------------
 
 Terraform can work directly with docker and kubernetes
 
