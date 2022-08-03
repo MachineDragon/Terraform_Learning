@@ -92,7 +92,7 @@ create a new file called main.tf in our terraform directory
 
 copy this code into the file and command + s to save it
 
-# Configure the AWS Provider
+
 provider "aws" {
   region = "us-east-1"
 }
