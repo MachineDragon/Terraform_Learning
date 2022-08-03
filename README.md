@@ -144,3 +144,49 @@ Terraform can work directly with docker and kubernetes
 You can use terraform to provision a kubernetes cluster on a cloud provider and then use terraform kubernetes provider to provision containers on that cluster
 
 
+
+EC2 Instance within the aws console as compared to doing it with terraform
+---------------------------
+
+basically a virtual machine within aws
+
+ex.) deploying a windows server, Linux machine, database etc
+
+on aws 
+
+click on services
+
+ec2
+
+running instances
+
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/58194115/182710338-0fd08af4-32ab-4832-9df1-1d88a3bfba8b.png">
+
+
+launch instance
+
+
+search for the ami of your choosing
+
+
+deploys an ami which is basically an image ubuntu, windows etc
+
+
+select
+
+
+t2micro (the more down on the list you go the faster and more $$$)
+
+
+review and launch
+
+
+proceed without creating a key pair
+
+
+launch instances
+
+
+view instances
+
+
