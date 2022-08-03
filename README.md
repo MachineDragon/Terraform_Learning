@@ -98,6 +98,60 @@ create new access key
 show access key
 
 
+Launching an EC2 Instance manually within the aws console as compared to doing it with terraform
+---------------------------
+
+basically a virtual machine within aws
+
+ex.) deploying a windows server, Linux machine, database etc
+
+on aws 
+
+
+click on services
+
+
+ec2
+
+
+running instances
+
+
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/58194115/182710338-0fd08af4-32ab-4832-9df1-1d88a3bfba8b.png">
+
+
+launch instance
+
+
+search for the ami of your choosing
+
+
+<img width="643" alt="image" src="https://user-images.githubusercontent.com/58194115/182712966-e534682d-d04f-431a-afbf-2396e53b6a7a.png">
+
+
+Make sure to copy the ami id you will need this for your main.tf
+
+
+
+deploys an ami which is basically an image ubuntu, windows etc
+
+
+select
+
+
+t2micro (the more down on the list you go the faster and more $$$)
+
+
+review and launch
+
+
+proceed without creating a key pair
+
+
+launch instances
+
+
+view instances
 
 main.tf
 ---------------------------
@@ -105,6 +159,7 @@ in visual studio code
 
 
 create a new file called main.tf in our terraform directory
+
 
 copy this code into the file and command + s to save it
 
@@ -120,6 +175,62 @@ it should look something like this
 
 
 <img width="759" alt="image" src="https://user-images.githubusercontent.com/58194115/182707736-b78fef45-9c9b-4537-aaa7-c1d284c72bed.png">
+
+
+now copy this code into your main.tf
+
+
+
+resource "aws_instance" "web" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = "t2.micro"
+}
+
+
+
+we are going to change "web" to whatever you like to name your instance 
+
+<img width="643" alt="image" src="https://user-images.githubusercontent.com/58194115/182712966-e534682d-d04f-431a-afbf-2396e53b6a7a.png">
+
+paste your ami id to where it says data.aws_ami.ubuntu.id
+
+
+command + s
+
+<img width="850" alt="image" src="https://user-images.githubusercontent.com/58194115/182714182-82195bd7-7c3f-4019-9053-14a32e568ca8.png">
+
+
+Launching in VS Code Terminal
+------------------------
+
+in vs code on the top left select terminal
+
+
+new terminal
+
+
+terraform init
+
+
+looks at the providers we have defined and downloads necessary plugins to interact with aws api
+
+
+terraform apply
+
+
+creates the server, may take 5 - 10 minutes
+
+
+
+your instance should now show up in your aws view instances web page
+
+
+
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/58194115/182716768-57f3ef84-40c8-42c9-848c-bde7f2f56a3d.png">
+
+
+
+
 
 
 What is Terraform?
@@ -145,48 +256,6 @@ You can use terraform to provision a kubernetes cluster on a cloud provider and 
 
 
 
-EC2 Instance within the aws console as compared to doing it with terraform
----------------------------
 
-basically a virtual machine within aws
-
-ex.) deploying a windows server, Linux machine, database etc
-
-on aws 
-
-click on services
-
-ec2
-
-running instances
-
-<img width="581" alt="image" src="https://user-images.githubusercontent.com/58194115/182710338-0fd08af4-32ab-4832-9df1-1d88a3bfba8b.png">
-
-
-launch instance
-
-
-search for the ami of your choosing
-
-
-deploys an ami which is basically an image ubuntu, windows etc
-
-
-select
-
-
-t2micro (the more down on the list you go the faster and more $$$)
-
-
-review and launch
-
-
-proceed without creating a key pair
-
-
-launch instances
-
-
-view instances
 
 
