@@ -5,7 +5,7 @@ Installation
 
 Open Terminal
 
-if you dont already have brew then run this command, otherwise skip this
+if you dont already have brew then run this command, otherwise skip this step
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
