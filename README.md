@@ -6,6 +6,7 @@ Installation
 Open Terminal
 
 if you dont already have brew then run this command, otherwise skip this
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 type:    brew install terraform
