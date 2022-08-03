@@ -71,7 +71,7 @@ open folder
 select the terraform directory under documents
 
 
-Confic File
+Confic File and Security Credentials
 ----------------------------
 Open the .csv file
 
@@ -80,6 +80,22 @@ Open the .csv file
 File
 
 Save as(do not save over your current .csv file)
+
+
+(if you lost your config file follow these steps)
+
+go to your aws management console
+
+select your account on the top right
+
+<img width="583" alt="image" src="https://user-images.githubusercontent.com/58194115/182706827-6f3514c4-fa7b-4f07-a17b-3dc98a122948.png">
+
+
+Access key
+
+create new access key
+
+show access key
 
 
 
@@ -98,21 +114,6 @@ provider "aws" {
 }
 
 now open your config file and paste the access key and secret key under region
-
-(if you lost your config file follow these steps)
-
-go to your aws management console
-
-select your account on the top right
-
-<img width="583" alt="image" src="https://user-images.githubusercontent.com/58194115/182706827-6f3514c4-fa7b-4f07-a17b-3dc98a122948.png">
-
-
-Access key
-
-create new access key
-
-show access key
 
 paste this into your main.tf it should look something like this
 
