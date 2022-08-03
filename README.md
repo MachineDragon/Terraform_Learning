@@ -40,13 +40,21 @@ next
 
 create user
 
-SAVE THE CREDENTIALS AND DO NOT SHARE download .cs√
+SAVE THE CREDENTIALS AND DO NOT SHARE download .csv
 
 close
 
 Confic File
 ----------------------------
+Open the .csv file
+
 <img width="359" alt="image" src="https://user-images.githubusercontent.com/58194115/182642822-e35b573f-2d93-495a-8fb5-03a6289dcc61.png">
+
+File
+
+Save as(do not save over your current .csv file)
+
+
 
 
 
