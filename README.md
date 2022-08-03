@@ -5,8 +5,19 @@ Installation
 
 Open Terminal
 
+if you dont already have brew then run this command, otherwise skip this
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 type:    brew install terraform
 
+Install visual studio code
+
+on the left hand side of vsc select the 4 blocks and search terraform
+
+
+<img width="268" alt="image" src="https://user-images.githubusercontent.com/58194115/182705597-e7076b09-4655-4c8b-847e-e339a3122abe.png">
+
+install the hashicorp terraform extension
 
 
 AWS
@@ -44,6 +55,21 @@ SAVE THE CREDENTIALS AND DO NOT SHARE download .csv
 
 close
 
+
+Inventory
+---------------------------
+
+create a new folder in Documents called terraform
+
+open visual studio code
+
+on top left select file
+
+open folder
+
+select the terraform directory under documents
+
+
 Confic File
 ----------------------------
 Open the .csv file
@@ -56,8 +82,41 @@ Save as(do not save over your current .csv file)
 
 
 
+main.tf
+---------------------------
+in visual studio code
 
 
+create a new file called main.tf in our terraform directory
+
+copy this code into the file and command + s to save it
+
+# Configure the AWS Provider
+provider "aws" {
+  region = "us-east-1"
+}
+
+now open your config file and paste the access key and secret key under region
+
+(if you lost your config file follow these steps)
+
+go to your aws management console
+
+select your account on the top right
+
+<img width="583" alt="image" src="https://user-images.githubusercontent.com/58194115/182706827-6f3514c4-fa7b-4f07-a17b-3dc98a122948.png">
+
+
+Access key
+
+create new access key
+
+show access key
+
+paste this into your main.tf it should look something like this
+
+
+<img width="759" alt="image" src="https://user-images.githubusercontent.com/58194115/182707736-b78fef45-9c9b-4537-aaa7-c1d284c72bed.png">
 
 
 What is Terraform?
